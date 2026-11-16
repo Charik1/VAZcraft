@@ -6,16 +6,18 @@
     <meta
       name="description"
       content="VAZcraft — Minecraft-сервер на NeoForge с более чем 300 дополнениями для Create. Мощные серверы в Санкт-Петербурге. Проходка — от 300 ₽."
+      data-i18n-attr="content:metaDescription"
     />
     <meta name="theme-color" content="#101311" />
-    <title>VAZcraft — строй свою индустрию</title>
+    <title data-i18n="pageTitle">VAZcraft — строй свою индустрию</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="translations.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="#top" aria-label="VAZcraft — на главную">
+        <a class="brand" href="#top" aria-label="VAZcraft — на главную" data-i18n-attr="aria-label:brandHome">
           <img class="brand-mark" src="images/vazcraft-car.png" alt="" />
           <span>VAZ<span class="brand-light">craft</span></span>
         </a>
@@ -24,58 +26,75 @@
           class="menu-toggle"
           type="button"
           aria-label="Открыть меню"
+          data-i18n-menu
           aria-expanded="false"
           aria-controls="main-nav"
         >
           <span></span><span></span>
         </button>
 
-        <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
-          <a href="#about">О сервере</a>
-          <a href="#create">Мир Create</a>
-          <a href="#access">Проходка</a>
-          <a class="nav-cta" href="https://vaz-craft.millida.trade/">Начать играть <span aria-hidden="true">↗</span></a>
+        <nav class="main-nav" id="main-nav" aria-label="Основная навигация" data-i18n-attr="aria-label:navAria">
+          <a href="#about" data-i18n="navAbout">О сервере</a>
+          <a href="#create" data-i18n="navCreate">Мир Create</a>
+          <a href="#access" data-i18n="navAccess">Проходка</a>
+          <label class="language-picker">
+            <span class="visually-hidden" data-i18n="languageLabel">Язык сайта</span>
+            <select class="language-select" aria-label="Язык сайта" data-i18n-attr="aria-label:languageLabel">
+              <option value="ru">Русский</option>
+              <option value="en">English</option>
+              <option value="be">Беларуская</option>
+              <option value="kk">Қазақша</option>
+              <option value="ky">Кыргызча</option>
+              <option value="uz">Oʻzbekcha</option>
+              <option value="tg">Тоҷикӣ</option>
+              <option value="hy">Հայերեն</option>
+              <option value="az">Azərbaycanca</option>
+              <option value="tk">Türkmençe</option>
+              <option value="ro">Română</option>
+            </select>
+          </label>
+          <a class="nav-cta" href="https://vaz-craft.millida.trade/" data-i18n-html="navPlay">Начать играть <span aria-hidden="true">↗</span></a>
         </nav>
       </header>
 
       <main id="top">
         <section class="hero section-wrap">
           <div class="hero-copy">
-            <div class="eyebrow"><span class="eyebrow-dot"></span> ТВОЯ ИНДУСТРИЯ. ТВОИ ПРАВИЛА.</div>
-            <h1>Мир, который<br />работает <span>на тебя.</span></h1>
-            <p class="hero-description">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="heroEyebrow">ТВОЯ ИНДУСТРИЯ. ТВОИ ПРАВИЛА.</span></div>
+            <h1 data-i18n-html="heroTitle">Мир, который<br />работает <span>на тебя.</span></h1>
+            <p class="hero-description" data-i18n="heroDescription">
               Не просто выживание. Целая вселенная Create, где каждая шестерня
               запускает что-то большее.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="https://vaz-craft.millida.trade/">
+              <a class="button button-primary" href="https://vaz-craft.millida.trade/" data-i18n-html="heroJoin">
                 Попасть на сервер <span aria-hidden="true">↗</span>
               </a>
-              <a class="text-link" href="#create">Исследовать сборку <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#create" data-i18n-html="heroExplore">Исследовать сборку <span aria-hidden="true">↓</span></a>
             </div>
             <blockquote class="hero-quote">
               <span class="quote-mark" aria-hidden="true">“</span>
               <div>
-                <p>«Неважно, в каком состоянии машина — резина должна быть начернена».</p>
-                <cite>Юра Волков</cite>
+                <p data-i18n="quote">«Неважно, в каком состоянии машина — резина должна быть начернена».</p>
+                <cite data-i18n="quoteAuthor">Юра Волков</cite>
               </div>
             </blockquote>
             <div class="hero-meta">
               <div class="meta-item">
                 <span class="meta-value">300<span>+</span></span>
-                <span class="meta-label">аддонов для Create</span>
+                <span class="meta-label" data-i18n="metaAddons">аддонов для Create</span>
               </div>
               <span class="meta-divider" aria-hidden="true"></span>
               <div class="meta-item">
                 <span class="meta-value">NeoForge</span>
-                <span class="meta-label">технологичная основа</span>
+                <span class="meta-label" data-i18n="metaTech">технологичная основа</span>
               </div>
             </div>
           </div>
 
-          <div class="hero-art" aria-label="Схема индустриального мира VAZcraft">
+          <div class="hero-art" aria-label="Схема индустриального мира VAZcraft" data-i18n-attr="aria-label:heroArtAria">
             <div class="art-grid"></div>
-            <div class="art-label art-label-top"><span></span> FACTORY SYSTEM / 01</div>
+            <div class="art-label art-label-top"><span></span> <span data-i18n="factorySystem">FACTORY SYSTEM / 01</span></div>
             <div class="orbit orbit-one"></div>
             <div class="orbit orbit-two"></div>
             <div class="machine machine-back">
@@ -93,30 +112,30 @@
               </div>
               <div class="machine-foot"></div>
             </div>
-            <div class="art-chip chip-one"><span class="chip-icon">↗</span><span>МЕХАНИЗМЫ<br /><b>БЕЗ ГРАНИЦ</b></span></div>
-            <div class="art-chip chip-two"><span class="pulse"></span> SPB / ONLINE WORLD</div>
-            <div class="art-label art-label-bottom">СОБИРАЙ · АВТОМАТИЗИРУЙ · СОЗДАВАЙ</div>
+            <div class="art-chip chip-one"><span class="chip-icon">↗</span><span data-i18n-html="artChip">МЕХАНИЗМЫ<br /><b>БЕЗ ГРАНИЦ</b></span></div>
+            <div class="art-chip chip-two"><span class="pulse"></span> <span data-i18n="onlineWorld">SPB / ONLINE WORLD</span></div>
+            <div class="art-label art-label-bottom" data-i18n="artBottom">СОБИРАЙ · АВТОМАТИЗИРУЙ · СОЗДАВАЙ</div>
           </div>
         </section>
 
-        <section class="ticker" aria-label="Возможности сервера">
+        <section class="ticker" aria-label="Возможности сервера" data-i18n-attr="aria-label:tickerAria">
           <div class="ticker-track">
-            <span>БОЛЬШОЙ МИР</span><i>✳</i><span>БЕЗГРАНИЧНЫЙ CREATE</span><i>✳</i>
-            <span>САНКТ-ПЕТЕРБУРГ</span><i>✳</i><span>ТВОЯ НОВАЯ ИСТОРИЯ</span><i>✳</i>
-            <span aria-hidden="true">БОЛЬШОЙ МИР</span><i aria-hidden="true">✳</i>
-            <span aria-hidden="true">БЕЗГРАНИЧНЫЙ CREATE</span><i aria-hidden="true">✳</i>
-            <span aria-hidden="true">САНКТ-ПЕТЕРБУРГ</span><i aria-hidden="true">✳</i>
-            <span aria-hidden="true">ТВОЯ НОВАЯ ИСТОРИЯ</span><i aria-hidden="true">✳</i>
+            <span data-i18n="tickerWorld">БОЛЬШОЙ МИР</span><i>✳</i><span data-i18n="tickerCreate">БЕЗГРАНИЧНЫЙ CREATE</span><i>✳</i>
+            <span data-i18n="tickerCity">САНКТ-ПЕТЕРБУРГ</span><i>✳</i><span data-i18n="tickerStory">ТВОЯ НОВАЯ ИСТОРИЯ</span><i>✳</i>
+            <span aria-hidden="true" data-i18n="tickerWorld">БОЛЬШОЙ МИР</span><i aria-hidden="true">✳</i>
+            <span aria-hidden="true" data-i18n="tickerCreate">БЕЗГРАНИЧНЫЙ CREATE</span><i aria-hidden="true">✳</i>
+            <span aria-hidden="true" data-i18n="tickerCity">САНКТ-ПЕТЕРБУРГ</span><i aria-hidden="true">✳</i>
+            <span aria-hidden="true" data-i18n="tickerStory">ТВОЯ НОВАЯ ИСТОРИЯ</span><i aria-hidden="true">✳</i>
           </div>
         </section>
 
         <section class="about section-wrap" id="about">
           <div class="section-heading">
             <div>
-              <div class="eyebrow">01 / ЗНАКОМСТВО</div>
-              <h2>Больше, чем<br /><span>просто сервер.</span></h2>
+              <div class="eyebrow" data-i18n="aboutEyebrow">01 / ЗНАКОМСТВО</div>
+              <h2 data-i18n-html="aboutTitle">Больше, чем<br /><span>просто сервер.</span></h2>
             </div>
-            <p class="section-intro">
+            <p class="section-intro" data-i18n="aboutIntro">
               VAZcraft — место для тех, кому мало поставить одну печку.
               Здесь идеи превращаются в механизмы, а механизмы — в целые города.
             </p>
@@ -125,22 +144,22 @@
             <article class="feature-card">
               <span class="feature-number">01</span>
               <div class="feature-icon icon-gear" aria-hidden="true">✹</div>
-              <h3>Индустрия без скуки</h3>
-              <p>Более 300 аддонов для Create — строй конвейеры, поезда и сложные производственные линии.</p>
+              <h3 data-i18n="featureIndustryTitle">Индустрия без скуки</h3>
+              <p data-i18n="featureIndustryText">Более 300 аддонов для Create — строй конвейеры, поезда и сложные производственные линии.</p>
               <span class="card-arrow" aria-hidden="true">↗</span>
             </article>
             <article class="feature-card feature-card-accent">
               <span class="feature-number">02</span>
               <div class="feature-icon icon-world" aria-hidden="true">◉</div>
-              <h3>Мир для своих идей</h3>
-              <p>Осваивай мир в своём темпе: исследуй, проектируй и воплощай проекты вместе с другими игроками.</p>
+              <h3 data-i18n="featureWorldTitle">Мир для своих идей</h3>
+              <p data-i18n="featureWorldText">Осваивай мир в своём темпе: исследуй, проектируй и воплощай проекты вместе с другими игроками.</p>
               <span class="card-arrow" aria-hidden="true">↗</span>
             </article>
             <article class="feature-card">
               <span class="feature-number">03</span>
               <div class="feature-icon icon-pin" aria-hidden="true">⌖</div>
-              <h3>Серверы в Петербурге</h3>
-              <p>Мощное серверное оборудование размещено в Санкт-Петербурге для комфортной игры.</p>
+              <h3 data-i18n="featureServerTitle">Серверы в Петербурге</h3>
+              <p data-i18n="featureServerText">Мощное серверное оборудование размещено в Санкт-Петербурге для комфортной игры.</p>
               <span class="card-arrow" aria-hidden="true">↗</span>
             </article>
           </div>
@@ -155,25 +174,25 @@
                 <span class="blueprint-cross">+</span>
                 <span class="blueprint-ring"></span>
                 <span class="blueprint-gear">✹</span>
-                <span class="blueprint-caption">CREATE / ENGINEERING</span>
+                <span class="blueprint-caption" data-i18n="blueprintCaption">CREATE / ENGINEERING</span>
               </div>
               <span class="coordinate coord-one">X: 128 / Z: 064</span>
-              <span class="coordinate coord-two">DESIGN YOUR SYSTEM</span>
+              <span class="coordinate coord-two" data-i18n="designSystem">DESIGN YOUR SYSTEM</span>
             </div>
             <div class="create-copy">
-              <div class="eyebrow">02 / ВОЗМОЖНОСТИ</div>
-              <h2>У Create<br />есть <span>план.</span></h2>
-              <p>
+              <div class="eyebrow" data-i18n="createEyebrow">02 / ВОЗМОЖНОСТИ</div>
+              <h2 data-i18n-html="createTitle">У Create<br />есть <span>план.</span></h2>
+              <p data-i18n="createDescription">
                 На базе NeoForge собрана большая коллекция дополнений для Create.
                 Она открывает новые способы строить, автоматизировать и удивляться
  тому, что ты придумал.
               </p>
               <ul class="check-list">
-                <li><span>✓</span> Более 300 дополнений для Create</li>
-                <li><span>✓</span> Технологичная сборка на NeoForge</li>
-                <li><span>✓</span> Пространство для масштабных проектов</li>
+                <li><span>✓</span> <span data-i18n="checkAddons">Более 300 дополнений для Create</span></li>
+                <li><span>✓</span> <span data-i18n="checkLoader">Технологичная сборка на NeoForge</span></li>
+                <li><span>✓</span> <span data-i18n="checkProjects">Пространство для масштабных проектов</span></li>
               </ul>
-              <a class="text-link light-link" href="#access">Пора строить <span aria-hidden="true">↗</span></a>
+              <a class="text-link light-link" href="#access" data-i18n-html="createLink">Пора строить <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </section>
@@ -181,18 +200,18 @@
         <section class="access section-wrap" id="access">
           <div class="access-card">
             <div class="access-content">
-              <div class="eyebrow">03 / ТВОЙ СЛЕДУЮЩИЙ ШАГ</div>
-              <h2>Твоя история<br />начинается <span>здесь.</span></h2>
-              <p>Проходка на VAZcraft — от 300 рублей. Выбирай свой путь и готовься запускать первую линию.</p>
-              <a class="button button-primary" href="#faq">
-                Как попасть на сервер <span aria-hidden="true">↗</span>
+              <div class="eyebrow" data-i18n="accessEyebrow">03 / ТВОЙ СЛЕДУЮЩИЙ ШАГ</div>
+              <h2 data-i18n-html="accessTitle">Твоя история<br />начинается <span>здесь.</span></h2>
+              <p data-i18n="accessDescription">Проходка на VAZcraft — от 300 рублей. Выбирай свой путь и готовься запускать первую линию.</p>
+              <a class="button button-primary" href="https://vaz-craft.millida.trade/" data-i18n-html="accessLink">
+                Начать играть <span aria-hidden="true">↗</span>
               </a>
-              <p class="fine-print">Стоимость начинается от 300 ₽. Актуальные условия уточняйте у администрации сервера.</p>
+              <p class="fine-print" data-i18n="accessFinePrint">Стоимость начинается от 300 ₽. Актуальные условия уточняйте у администрации сервера.</p>
             </div>
             <div class="access-stamp" aria-hidden="true">
               <span class="stamp-top">VAZCRAFT</span>
               <span class="stamp-icon">✹</span>
-              <span class="stamp-bottom">BUILT TO CREATE</span>
+              <span class="stamp-bottom" data-i18n="builtToCreate">BUILT TO CREATE</span>
             </div>
             <span class="access-corner" aria-hidden="true">VC / 2026</span>
           </div>
@@ -200,33 +219,33 @@
 
         <section class="faq section-wrap" id="faq">
           <div class="faq-heading">
-            <div class="eyebrow">04 / ПЕРЕД СТАРТОМ</div>
-            <h2>Есть <span>вопросы?</span></h2>
+            <div class="eyebrow" data-i18n="faqEyebrow">04 / ПЕРЕД СТАРТОМ</div>
+            <h2 data-i18n-html="faqTitle">Есть <span>вопросы?</span></h2>
           </div>
           <div class="faq-list">
             <details>
-              <summary>На какой версии и загрузчике работает сервер?<span aria-hidden="true"></span></summary>
-              <p>Сервер работает на NeoForge. Совместимую версию Minecraft и инструкцию по установке сборки уточняйте у администрации.</p>
+              <summary data-i18n-html="faqVersionQuestion">На какой версии и загрузчике работает сервер?<span aria-hidden="true"></span></summary>
+              <p data-i18n="faqVersionAnswer">Сервер работает на NeoForge. Совместимую версию Minecraft и инструкцию по установке сборки уточняйте у администрации.</p>
             </details>
             <details>
-              <summary>Сколько стоит проходка?<span aria-hidden="true"></span></summary>
-              <p>Стоимость начинается от 300 рублей. Итоговая цена зависит от актуальных условий сервера — уточните их перед оплатой.</p>
+              <summary data-i18n-html="faqPriceQuestion">Сколько стоит проходка?<span aria-hidden="true"></span></summary>
+              <p data-i18n="faqPriceAnswer">Стоимость начинается от 300 рублей. Итоговая цена зависит от актуальных условий сервера — уточните их перед оплатой.</p>
             </details>
             <details>
-              <summary>Где расположены серверы?<span aria-hidden="true"></span></summary>
-              <p>Мощные серверы VAZcraft размещены в Санкт-Петербурге.</p>
+              <summary data-i18n-html="faqLocationQuestion">Где расположены серверы?<span aria-hidden="true"></span></summary>
+              <p data-i18n="faqLocationAnswer">Мощные серверы VAZcraft размещены в Санкт-Петербурге.</p>
             </details>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <a class="brand" href="#top" aria-label="VAZcraft — наверх">
+        <a class="brand" href="#top" aria-label="VAZcraft — наверх" data-i18n-attr="aria-label:brandTop">
           <img class="brand-mark" src="images/vazcraft-car.png" alt="" />
           <span>VAZ<span class="brand-light">craft</span></span>
         </a>
-        <span class="footer-note">ТВОЯ ИНДУСТРИЯ НАЧИНАЕТСЯ С ИДЕИ.</span>
-        <a class="back-top" href="#top">Наверх ↑</a>
+        <span class="footer-note" data-i18n="footerNote">ТВОЯ ИНДУСТРИЯ НАЧИНАЕТСЯ С ИДЕИ.</span>
+        <a class="back-top" href="#top" data-i18n="backTop">Наверх ↑</a>
       </footer>
     </div>
   </body>
